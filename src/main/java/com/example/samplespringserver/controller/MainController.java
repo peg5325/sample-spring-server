@@ -12,4 +12,9 @@ public class MainController {
     public String home() {
         return "forward:/index.html";
     }
+
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "forward:/health.html";
+    }
 }
